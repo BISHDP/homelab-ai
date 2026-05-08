@@ -1,0 +1,2 @@
+timestamp,cpu_percent,mem_used_gb,mem_available_gb,disk_read_mb,disk_write_mb,gpu_util_percent,gpu_mem_used_gb,gpu_mem_total_gb
+2026-05-08T14:44:23.402472,3.0,10.85,19.65,236683.13,495744.42,14,1.87,8.0
