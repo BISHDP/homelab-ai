@@ -9,7 +9,7 @@ import os
 pynvml.nvmlInit()
 gpu_handle = pynvml.nvmlDeviceGetHandleByIndex(0)
 
-DATA_DIR = "~/projects/homelab-ai/monitor/data"
+DATA_DIR = os.path.expanduser("~/projects/homelab-ai/monitor/data")
 CSV_PATH = os.path.join(DATA_DIR, "metrics.csv")
 
 def collect_metrics():
