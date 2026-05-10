@@ -23,14 +23,18 @@ def collect_metrics():
     
     # Disk IO
     disk_io = psutil.disk_io_counters()
-    disk_read_mb = disk_io.read_bytes / (1024 ** 2)
-    disk_write_mb = disk_io.write_bytes / (1024 ** 2)
+    if disk_io is None:
+        disk_read_mb = 0.0
+        disk_write_mb = 0.0
+    else:
+        disk_read_mb = disk_io.read_bytes / (1024 ** 2)
+        disk_write_mb = disk_io.write_bytes / (1024 ** 2)
     
     # GPU
     gpu_util = pynvml.nvmlDeviceGetUtilizationRates(gpu_handle)
     gpu_mem = pynvml.nvmlDeviceGetMemoryInfo(gpu_handle)
-    gpu_mem_used_gb = gpu_mem.used / (1024 ** 3)
-    gpu_mem_total_gb = gpu_mem.total / (1024 ** 3)
+    gpu_mem_used_gb = int(gpu_mem.used) / (1024 ** 3)
+    gpu_mem_total_gb = int(gpu_mem.total) / (1024 ** 3)
     
     return {
         "timestamp": datetime.now().isoformat(),
