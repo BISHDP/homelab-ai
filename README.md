@@ -22,6 +22,7 @@ the results in an interactive Streamlit dashboard.
 - Ubuntu 24.04 bare metal
 
 ## Project Structure
+```
 homelab-ai/
 ├── monitor/
 │   ├── collector/
@@ -29,7 +30,8 @@ homelab-ai/
 │   │   └── requirements.txt      # Python dependencies
 │   ├── notebooks/
 │   │   ├── 01_eda.ipynb          # Exploratory data analysis
-│   │   └── 02_anomaly_detection.ipynb  # IsolationForest vs z-score comparison
+│   │   ├── 02_anomaly_detection.ipynb  # IsolationForest vs z-score comparison
+|   |   └── status.ipynb          # Outputs the hardware and checks the CUDA config
 │   ├── dashboard/
 │   │   └── app.py                # Streamlit dashboard
 │   └── data/
@@ -41,6 +43,8 @@ homelab-ai/
 ├── .venv/                        # gitignored
 ├── .gitignore
 └── README.md
+```
+```
 
 ## Running it
 ### Start the collector
