@@ -1,7 +1,7 @@
 # Homelab AI Monitor
 
-A homelab resource monitor built as an initial foreay into learning AI/ML operations
-and enginnering.  It collects real hardware metrics from the host running the collector,
+A homelab resource monitor built as an initial foray into learning AI/ML operations
+and engineering.  It collects real hardware metrics from the host running the collector,
 detects anomalies in the metrics with machine learning, and provides visualizations of
 the results in an interactive Streamlit dashboard.
 
@@ -43,7 +43,6 @@ homelab-ai/
 ├── .venv/                        # gitignored
 ├── .gitignore
 └── README.md
-```
 ```
 
 ## Running it
