@@ -42,6 +42,8 @@ homelab-ai/
 │       └── docker-compose.yml
 ├── .venv/                        # gitignored
 ├── .gitignore
+├── .editorconfig
+├── Makefile
 └── README.md
 ```
 
@@ -55,7 +57,30 @@ systemctl --user start homelab-collector
 source .venv/bin/activate
 streamlit run monitor/dashboard/app.py
 ```
+or
+```bash
+make dashboard
+```
+
 ### Start Jupyter
 ```bash
 cd docker/jupyter && docker compose up -d
+```
+or
+```bash
+make start
+```
+
+### Stop Jupyter
+```bash
+cd docker/jupyter && docker compose down
+```
+or
+```bash
+make stop
+```
+
+### Check lab status
+```bash
+make status
 ```
