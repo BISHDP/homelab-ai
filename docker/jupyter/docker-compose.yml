@@ -6,6 +6,7 @@ services:
     volumes:
       - ../../monitor/notebooks:/workspace/notebooks
       - ../../monitor/data:/workspace/data
+      - ../../models:/workspace/models
     deploy:
       resources:
         reservations:
