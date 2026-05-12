@@ -54,28 +54,15 @@ systemctl --user start homelab-collector
 ```
 ### Start the dashboard
 ```bash
-source .venv/bin/activate
-streamlit run monitor/dashboard/app.py
-```
-or
-```bash
 make dashboard
 ```
 
 ### Start Jupyter
 ```bash
-cd docker/jupyter && docker compose up -d
-```
-or
-```bash
 make start
 ```
 
 ### Stop Jupyter
-```bash
-cd docker/jupyter && docker compose down
-```
-or
 ```bash
 make stop
 ```
