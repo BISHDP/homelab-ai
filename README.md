@@ -24,6 +24,11 @@ the results in an interactive Streamlit dashboard.
 ## Project Structure
 ```
 homelab-ai/
+├── models/
+|   ├── .gitkeep
+|   ├── ram_growth_predictor.json  # Metadata for the model training
+|   └── ram_growth_predictor.pkl   # Linear Regression model for RAM trend
+|
 ├── monitor/
 │   ├── collector/
 │   │   ├── collector.py          # Hardware metrics collection script
