@@ -1,9 +1,9 @@
 # Homelab AI Monitor
 
-A homelab resource monitor built as an initial foray into learning AI/ML operations
-and engineering.  It collects real hardware metrics from the host running the collector,
-detects anomalies in the metrics with machine learning, and provides visualizations of
-the results in an interactive Streamlit dashboard.
+A homelab resource monitor built as a portfolio project demonstrating AI/ML operations
+and engineering applied to real infrastructure data.  It collects real hardware metrics
+from the host running the collector, detects anomalies in the metrics with machine
+learning, and provides visualizations of the results in an interactive Streamlit dashboard.
 
 ## Features
 - Collects CPU, memory, GPU, and disk metrics every 60 seconds via a systemd service
@@ -28,7 +28,6 @@ homelab-ai/
 |   ├── .gitkeep
 |   ├── ram_growth_predictor.json  # Metadata for the model training
 |   └── ram_growth_predictor.pkl   # Linear Regression model for RAM trend
-|
 ├── monitor/
 │   ├── collector/
 │   │   ├── collector.py          # Hardware metrics collection script
@@ -36,6 +35,7 @@ homelab-ai/
 │   ├── notebooks/
 │   │   ├── 01_eda.ipynb          # Exploratory data analysis
 │   │   ├── 02_anomaly_detection.ipynb  # IsolationForest vs z-score comparison
+|   |   ├── 03_ram_growth_predictor.ipynb   # Exploration of RAM data trend, model selection, and training
 |   |   └── status.ipynb          # Outputs the hardware and checks the CUDA config
 │   ├── dashboard/
 │   │   └── app.py                # Streamlit dashboard
