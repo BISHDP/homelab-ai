@@ -36,6 +36,7 @@ homelab-ai/
 │   │   ├── 01_eda.ipynb          # Exploratory data analysis
 │   │   ├── 02_anomaly_detection.ipynb  # IsolationForest vs z-score comparison
 |   |   ├── 03_ram_growth_predictor.ipynb   # Exploration of RAM data trend, model selection, and training
+|   |   ├── 04_anomaly_classifer.ipynb  # Using unsupervised data in a Logistic Regression model
 |   |   └── status.ipynb          # Outputs the hardware and checks the CUDA config
 │   ├── dashboard/
 │   │   └── app.py                # Streamlit dashboard
